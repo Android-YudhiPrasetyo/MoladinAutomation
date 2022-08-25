@@ -5,7 +5,7 @@ require('cypress-iframe')
 import { BASE_URL_Midtrans, MidtransPillow, Name, Email, PhoneNo, City, Address, PostalCode, CardNumber,
 	ExpirationDate, CVV, Passcode } from '../../../config'
 
-import MidtransPage from '../page_object/MidtransPages'
+import MidtransPage from '../page_object/MidtransPage'
 
 
 describe('Automation Web Demo Midtrans', () => {
