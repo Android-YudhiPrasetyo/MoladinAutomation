@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import 'cypress-iframe';
+Cypress.Commands.add('switchToIframe', (iframe) => {
+	cy.frameLoaded('#snap-midtrans')
+	.its('0.contentDocument.body')
+	.should('be.visible')
+	.then(cy.wrap);
+})
+require('cypress-xpath')
+require('cypress-iframe')
